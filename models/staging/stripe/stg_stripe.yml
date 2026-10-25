@@ -6,7 +6,7 @@ models:
     columns: 
       - name: payment_id
         description: The primary key for payments
-        tests:
+        data_tests:
           - unique
           - not_null
 

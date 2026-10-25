@@ -6,7 +6,7 @@ models:
     columns: 
       - name: customer_id
         description: The primary key for customers.
-        tests:
+        data_tests:
           - unique
           - not_null
   - name: fct_orders
@@ -14,6 +14,6 @@ models:
     columns:
       - name: order_id
         description: the primary key for orders
-        tests:
+        data_tests:
           - unique
           - not_null
