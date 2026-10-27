@@ -1,3 +1,4 @@
+
 with orders as  (
     select * from {{ ref ('stg_jaffle_shop__orders' )}}
 ),
@@ -5,6 +6,9 @@ with orders as  (
 payments as (
     select * from {{ ref ('stg_stripe__payments') }}
 ),
+
+
+
 
 order_payments as (
     select
